@@ -1,6 +1,6 @@
 # 📍 compass_view
 
-A customizable and lightweight Flutter package that provides beautiful compass UI components and direction/heading utilities out of the box. Designed for easy integration and scalability, this package makes it simple to build compass-based applications with minimal effort.
+A customizable and lightweight Flutter package built on top of flutter_compass, providing beautiful compass UI components and direction/heading utilities out of the box. Designed for easy integration and scalability, this package makes it simple to build compass-based applications with minimal effort.
 
 ## ✨ Features
 
