@@ -1,39 +1,76 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 📍 compass_view
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A customizable and lightweight Flutter package that provides beautiful compass UI components and direction/heading utilities out of the box. Designed for easy integration and scalability, this package makes it simple to build compass-based applications with minimal effort.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+## ✨ Features
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+- 🔄 Real-time compass rotation with smooth animations.
+- 🧭 Beautiful customizable compass painter widget.
+- 📐 Heading/degree calculation with cardinal directions (N, NE, SW, etc).
+- ⚠️ Built-in error handling with customizable `errorBuilder`.
+- 🧱 Modular components for easy integration and reuse.
 
-## Features
+---
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## 📦 Installation
 
-## Getting started
+Add the following line to your `pubspec.yaml`:
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  compass_view: ^0.0.1 # replace with latest version
 ```
 
-## Additional information
+```bash
+flutter pub get
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## 🧑‍💻 Usage
+
+🔁 Compass with Live Heading
+
+```dart
+import 'package:compass_view/compass_view.dart';
+
+CompassHeading(
+    textStyle: TextStyle(
+        fontSize: 32, 
+        fontWeight: FontWeight.bold, 
+        color: Colors.black
+    ),
+),
+
+```
+
+🎨 Display the Compass Only (No Heading)
+
+```dart
+import 'package:compass_view/compass_view.dart';
+
+CompassWidget(
+  size: 100,
+  backgroundColor: Colors.white,
+  markerColor: Colors.black,
+  textStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),
+)
+
+```
+
+## ⚙️ Permissions
+Ensure your app requests sensor permissions on Android and iOS.
+
+Android
+Add the following to AndroidManifest.xml:
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-feature android:name="android.hardware.sensor.compass" android:required="false" />
+```
+
+iOS
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app uses your location to show compass heading.</string>
+```
+
+## 🙌 Contributing
+Pull requests and suggestions are welcome! Please open issues to report bugs or feature requests.
