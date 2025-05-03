@@ -1,6 +1,6 @@
 name: compass_view
-description: "A new Flutter package project."
-version: 0.0.1
+description: "A customizable and lightweight Flutter package that provides beautiful compass UI components and direction/heading utilities out of the box. Designed for easy integration and scalability, this package makes it simple to build compass-based applications with minimal effort."
+version: 1.0.0
 homepage: https://github.com/WorkWithAfridi/compass_view-Package.git
 
 environment:
