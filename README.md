@@ -10,7 +10,12 @@ A customizable and lightweight Flutter package that provides beautiful compass U
 - ⚠️ Built-in error handling with customizable `errorBuilder`.
 - 🧱 Modular components for easy integration and reuse.
 
----
+## Images/ Screenshots
+
+![Demo Image](https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/IMG_0348.PNG?raw=true)
+![Demo Image](https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/IMG_0349.PNG?raw=true)
+
+## Video
 
 ## 📦 Installation
 
