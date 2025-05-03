@@ -1,7 +1,5 @@
 // lib/src/compass_widget.dart
 
-import 'dart:math';
-
 import 'package:compass_view/src/services/compass_service.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +47,6 @@ class _CompassHeadingState extends State<CompassHeading> {
         }
 
         final heading = snapshot.data ?? 0.0;
-        final angle = -(heading * pi / 180);
         final direction = getCardinalDirection(heading);
 
         return AnimatedSwitcher(
