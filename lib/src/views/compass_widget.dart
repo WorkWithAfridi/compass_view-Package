@@ -64,11 +64,11 @@ class _CompassWidgetState extends State<CompassWidget> {
             ),
             widget.showPointer
                 ? Container(
-                  height: widget.size,
+                  height: widget.size / 3,
                   width: widget.size,
                   alignment: Alignment.topCenter,
                   child: Container(
-                    width: 4,
+                    width: 3,
                     height: widget.size / 2,
                     decoration: BoxDecoration(color: widget.markerColor, borderRadius: BorderRadius.circular(2)),
                   ),

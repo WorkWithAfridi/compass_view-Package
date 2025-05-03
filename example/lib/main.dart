@@ -34,7 +34,7 @@ class CompassHomePage extends StatelessWidget {
           children: [
             CompassWidget(
               size: 100,
-              backgroundColor: Colors.white,
+              backgroundColor: Colors.black,
               showPointer: false,
               markerColor: Colors.black,
               textStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),

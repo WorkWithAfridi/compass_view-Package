@@ -16,8 +16,8 @@ class CustomCompassPainter extends CustomPainter {
   });
 
   @override
-  void paint(Canvas canvas, Size _) {
-    final Offset center = Offset(size / 2, size / 2);
+  void paint(Canvas canvas, Size canvasSize) {
+    final Offset center = canvasSize.center(Offset.zero);
     final double radius = size / 2;
 
     final Paint circlePaint =
@@ -34,7 +34,6 @@ class CustomCompassPainter extends CustomPainter {
     canvas.drawCircle(center, radius, circlePaint);
 
     const List<String> directions = ['N', 'E', 'S', 'W'];
-
     for (int i = 0; i < 360; i += 30) {
       final double angle = (i - 90) * pi / 180;
       final double markerLength = i % 90 == 0 ? 15.0 : 8.0;
