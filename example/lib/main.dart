@@ -24,7 +24,7 @@ class CompassHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Compass Example'), backgroundColor: Theme.of(context).colorScheme.inversePrimary),
+      appBar: AppBar(title: const Text('Compass View', style: TextStyle(color: Colors.white)), backgroundColor: Colors.black),
       body: SizedBox(
         width: double.infinity,
         child: Column(
@@ -35,6 +35,7 @@ class CompassHomePage extends StatelessWidget {
             CompassWidget(
               size: 100,
               backgroundColor: Colors.white,
+              showPointer: false,
               markerColor: Colors.black,
               textStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),
             ),

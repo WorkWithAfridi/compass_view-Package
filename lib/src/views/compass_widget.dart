@@ -11,10 +11,12 @@ class CompassWidget extends StatefulWidget {
   final Color backgroundColor;
   final Color markerColor;
   final TextStyle textStyle;
+  final bool showPointer;
 
   const CompassWidget({
     super.key,
     this.size = 250,
+    this.showPointer = true,
     this.backgroundColor = Colors.white,
     this.markerColor = Colors.red,
     this.textStyle = const TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
@@ -60,12 +62,18 @@ class _CompassWidgetState extends State<CompassWidget> {
                 ),
               ),
             ),
-            Container(
-              height: widget.size,
-              width: widget.size,
-              alignment: Alignment.topCenter,
-              child: Container(width: 4, height: widget.size / 2, decoration: BoxDecoration(color: widget.markerColor, borderRadius: BorderRadius.circular(2))),
-            ),
+            widget.showPointer
+                ? Container(
+                  height: widget.size,
+                  width: widget.size,
+                  alignment: Alignment.topCenter,
+                  child: Container(
+                    width: 4,
+                    height: widget.size / 2,
+                    decoration: BoxDecoration(color: widget.markerColor, borderRadius: BorderRadius.circular(2)),
+                  ),
+                )
+                : SizedBox.shrink(),
           ],
         );
       },
