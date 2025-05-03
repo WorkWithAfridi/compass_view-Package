@@ -13,8 +13,8 @@ A customizable and lightweight Flutter package that provides beautiful compass U
 ## Images/ Screenshots
 
 <div align="left" style="display: flex; gap: 10px;">
-  <img src="https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/IMG_0348.PNG?raw=true" width="20%" />
-  <img src="https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/ezgif-6676b896b763f6.gif?raw=true" width="20%" />
+  <img src="https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/IMG_0351.PNG?raw=true" width="20%" />
+  <img src="https://github.com/WorkWithAfridi/compass_view-Package/blob/master/assets/ezgif-6ff64b43964004.gif?raw=true" width="20%" />
 </div>
 <br />
 
