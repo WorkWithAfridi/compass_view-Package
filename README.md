@@ -55,7 +55,7 @@ import 'package:compass_view/compass_view.dart';
 
 CompassWidget(
   size: 100,
-  backgroundColor: Colors.white,
+  backgroundColor: Colors.black,
   markerColor: Colors.black,
   textStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black),
 )
